@@ -7,7 +7,7 @@ So there are not user accounts and follow function. You can challenge after you 
 ```
 Check out [LIVE Twitter clone DEMO](https://twiiterclonemay.mayelinmaria.repl.co/) here!!
 
-Screenshot 
+
 <img width="647" alt="Screenshot 2022-11-10 at 1 14 02 PM" src="https://user-images.githubusercontent.com/108484218/201174316-530099cd-9b81-44ab-bfad-f454e75b4fb0.png">
 
 
