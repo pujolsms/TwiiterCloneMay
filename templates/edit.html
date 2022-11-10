@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block content %} {% load static%}
+
+<div class="main">
+    <div class="main-header">
+        <img class="bird_icon js-bird-icon" src="{% static 'img/twitter.svg'%}" />
+        
+        <h1 class="title">Home</h1>
+    </div>
+
+
+    <section class="post_form"> 
+        <form method="POST" enctype="multipart/form-data">
+         {% csrf_token %}
+            <input type="text" name="name" placeholder="Your Name" value="{{posts.name}}" maxlength="15" />
+            <input name="body" placeholder="{{posts.body}}"  maxlength="140" ></input>
+            <div class="editi">
+            <img src="{{posts.image.url}}" alt="" class="editimg">
+        </div>
+            <input id="form-img" type="file" name="image"/>
+            <br>
+            <input id="btn" type="submit" value="Update" />
+            <a href="{% url 'index' %}" id="cancel">Cancel</a>
+        </form>
+    </section>
+
+    {% endblock %}

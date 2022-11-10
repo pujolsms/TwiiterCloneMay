@@ -1,0 +1,170 @@
+/* .header {
+  padding: 20px 40px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+} */
+
+html,
+body {
+  height: 100%;
+}
+.container {
+  padding: 0;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main {
+  width: 100%;
+  max-width: 600px;
+  border-left: 1px solid rgb(235, 238, 240);
+  border-right: 1px solid rgb(235, 238, 240);
+}
+
+.content {
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+/*
+Post
+****************************/
+.posts li {
+  display: flex;
+}
+
+/* .posts li .crabimg {
+  flex-basis: 15%;
+} */
+
+
+.posts li .name_body {
+  flex-basis: 85%;
+}
+
+.post_form {
+  padding: 30px 40px;
+  border-bottom: 1px solid #ccc;
+}
+.post_form input {
+  width: 70%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: lightpink;
+}
+.post_form textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+#form-img{
+    width: 45%;
+    background: none;
+    border: 0;
+    padding-top: 30px;
+}
+#btn{
+  width: 20%;
+}
+
+a#cancel {
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 8px 15px;
+    background-color: gray;
+    color: black;
+}
+.posts ul {
+  padding: 0%;
+}
+.posts li {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  gap: 2%;
+  padding: 20px 40px;
+}
+.posts li img.menu_icon {
+  width: 20px;
+  position: absolute;
+  right: 30px;
+  top: 18px;
+}
+.posts li .menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 3px;
+}
+.posts li .menu a {
+  text-decoration: none;
+}
+.posts li .logo{
+  flex-basis: 15%;
+}
+.posts li .logo img{
+  width: 40px;
+}
+.posts li .name_body {
+  flex-basis: 85%;
+}
+.posts li .name_body .name {
+  font-weight: bold;
+}
+.posts li .name_body .datetime {
+  color: gray;
+}
+.main-header {
+  display: flex;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+
+}
+.main-header .bird_icon {
+  width: 7%;
+}
+.main-header h1{
+  padding-left: 20px;
+}
+
+.title {
+  color: rgb(28, 168, 168);
+}
+img.like {
+  width: 3%;
+}
+img.postimage {
+  width: 250px;
+  height: 200px;
+}
+
+img.editimg {
+  width: 50%;
+}
+
+@media screen and (max-width: 510px) {
+  .bottom-area .btn { 
+    margin-top: 10px;
+}
+
+  .posts li .name_body .name {
+    font-style: 20px;
+  }
+
+.btn {
+  width: 8px;
+  background-color: hotpink;
+  font-weight: bolder;
+  display: inline-block;
+  font-size: 15px;
+}
+}
